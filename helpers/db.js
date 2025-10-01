@@ -1,13 +1,13 @@
 import fs from "fs/promises";
 import path from "path";
 
-const dbPath = path.join(process.cwd(), "src", "db");
+const dbPath = path.join(process.cwd(), "db");
 
 
 async function readData(fileName) {
     const filePath = path.join(dbPath, fileName);
     const data = await fs.readFile(filePath, "utf-8");
-    return JSON.parse(dbContent);
+    return JSON.parse(data);
 }
 
 async function writeData(fileName, data) {
