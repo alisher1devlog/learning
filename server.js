@@ -27,3 +27,6 @@ app.listen(PORT, () => {
     console.log(`Server is running on port${PORT}`);
 
 })
+
+//ishlatib ko'rish uchun
+// yana ishlatish
